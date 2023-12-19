@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
        // Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/mrx_db?user=mrx&password=123");
-        Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/mrx_db?", "mrx", "123");
-
-        Statement statement = connection.createStatement();
+//        Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/mrx_db?", "mrx", "123");
+//
+//        Statement statement = connection.createStatement();
 
 //        executeInsert(9, "'Max'", 27, "'Moscow'", statement);
 //
@@ -24,15 +24,15 @@ public class Main {
 
 
 
-        CallableStatement callableStatement = connection.prepareCall("select gen_random_uuid ()");
-
-        ResultSet resultSet = callableStatement.executeQuery();
-        while (resultSet.next()) {
-            System.out.println(resultSet.getString(1));
-        }
-
-        statement.close();
-        connection.close();
+//        CallableStatement callableStatement = connection.prepareCall("select gen_random_uuid ()");
+//
+//        ResultSet resultSet = callableStatement.executeQuery();
+//        while (resultSet.next()) {
+//            System.out.println(resultSet.getString(1));
+//        }
+//
+//        statement.close();
+//        connection.close();
 //        Statement statement = connection.createStatement();
 
 //        ResultSet resultSet = statement.executeQuery("select* from netology.students");
